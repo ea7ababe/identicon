@@ -55,7 +55,8 @@ class Identicon extends Component {
 
     if (hash) {
       content = []
-      for (let i = 0; (i + 4) < hash.length; i += 1) {
+      let iterations = hash.length - 4
+      for (let i = 0; i < iterations; i++) {
         let distance = range(hash[i], 5, 47)
         let angle = range(hash[i + 1], 15, 180)
         let width = range(hash[i + 2], 2, 5)
@@ -63,6 +64,7 @@ class Identicon extends Component {
         let color = `rgb(${hash[i]}, ${hash[i+1]}, ${hash[i+2]})`
         let fill = filled ? color : "none"
         let d = filled ? wing : arc
+
         content.push(
           <path key={i} transform={`rotate(${rotation})`}
             d={d(0, 0, distance, 0, angle)}
