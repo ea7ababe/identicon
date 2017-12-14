@@ -36,3 +36,9 @@
 .TextInput:focus {
   outline: none;
 }
+
+.SourceLink {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}

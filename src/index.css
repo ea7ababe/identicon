@@ -4,3 +4,11 @@ body {
   font-family: sans-serif;
   color: #444;
 }
+
+a:link, a:visited {
+  color: #444;
+}
+
+a:hover, a:active {
+  color: #8b0000;
+}
