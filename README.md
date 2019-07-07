@@ -37,7 +37,7 @@ Then in your javascript files import it like this:
 	
 	// Using the object
 	identicon.render("some string")
-	setTimetout(() => identicon.render("other string"), 5000)
+	setTimeout(() => identicon.render("other string"), 5000)
 	
 Also see `example/index.html`.
 	
