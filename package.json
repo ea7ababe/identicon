@@ -1,18 +1,24 @@
 {
-  "name": "identicon",
+  "name": "identishapes",
   "version": "0.1.0",
-  "private": true,
+  "description": "A circular identicon generator",
+  "main": "dist/identishapes.min.js",
+  "repository": "https://github.com/ea7ababe/identicon",
+  "author": "Tau <tau@ea7aba.be>",
+  "license": "MIT",
+  "scripts": {
+    "build-dev": "webpack --mode=development",
+    "build": "webpack --mode=production"
+  },
   "devDependencies": {
-    "react-scripts": "1.0.17"
+    "@babel/core": "^7.5.0",
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
   },
   "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "@babel/runtime": "^7.5.1"
   }
 }
